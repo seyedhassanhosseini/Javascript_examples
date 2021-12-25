@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DriverPart</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./taxi.js"></script>
+    
+    
+</head>
+<body>
+  
+    <div id="container">
+      <form  >
+        <h1>Roma Taxi </h1>
+
+        <div class="formBox">
+          <label id="f1" for="origin">Origin :</label>
+          <input id="origin" type="text" class="formBox" placeholder="Enter a location" required >
+        </div>
+        <div class="formBox">
+          <label id="f2" for="destination">Destination :</label>
+          <input id="destination" type="text" class="formBox"  placeholder="Enter a location" required >
+        </div>
+
+        <div class="formBox">
+          <label for="passengers">Number of Passengers :</label>
+          <input id="passengers" type="number" class="formBox" min="1" max="5"  placeholder="Nuber of passengers" required>
+        </div>
+        <div class="formBox">
+          <label for="passengers">Desired pick-up time :</label>
+          <input id="pickUpTime" type="time" class="formBox"  required>
+        </div>
+
+      </form>
+    </div>
+    <div id="seyed1">
+      <input id="bilakhkkkk" type="submit" value="Submit your taxi"/>
+    </div>
+
+    <div id="seyed22">
+      <input id="send-Api" type="submit" value="Show Results"/>
+    </div>
+    <div id="seyed2">
+      
+      <form id="seyed3">
+        <h1>Roma Taxi</h1>
+        <label for="passengers">Your Request was submitted</label>
+        <input id="bilakhkkkkkk" type="submit"  value="New Request" />        
+      </form>
+    </div>
+
+    <div id="demo" >
+    <h4>Your Taxi Order :</h4>
+    <p id="s1">From:</p>
+    <p id="demo1"></p>
+    <p id="s2">To:</p>
+    <p id="demo2"></p>
+    <p id="s3">Desired pick-up time:</p>
+    <p id="demo4"></p>
+    <p id="s4">Number of Passengers :</p>
+    <p id="demo3"></p>
+
+    </div>
+
+    <div id="map"></div>
+
+          <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=---------------------&callback=initMap&libraries=places&v=weekly"
+      async
+    ></script>
+      
+</body>
+  
+</html>

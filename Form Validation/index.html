@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Js Page</title>
+    <script src="./test.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <form name = "myForm" action="welcome.html" onsubmit="return validate()">
+        <input type="text" id="username" placeholder="write your user name"/>
+        <label id="usError" style="color: lightseagreen; display: none;"> Invalid username</label>
+        <br /><br />
+        <input type="password" id="password" placeholder="write your password"/>
+        <label id="passError" style="color: lightseagreen; display: none;"> Invalid password</label>
+        <br /><br />
+        <input type="submit" value="login"/>
+    </form>
+    <div id="message" style="color:blueviolet"></div>
+</body>
+</html>
